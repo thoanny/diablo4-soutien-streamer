@@ -49,6 +49,10 @@ function handleFilter() {
       </li>
     </ul>
   </main>
+
+  <footer class="container mx-auto px-4 text-center my-6 opacity-75">
+    Fait avec ❤ et peu de temps par <a href="https://thoanny.fr" target="_blank" class="underline">Thoanny</a>
+  </footer>
 </template>
 
 <style scoped>
