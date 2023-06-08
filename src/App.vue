@@ -31,7 +31,7 @@ function handleFilter() {
   </header>
 
   <main class="container mx-auto px-4">
-    <p class="text-center">La limite d'affichage est définie à 100 pour des raisons de performance (il y a <a
+    <p class="text-center">La limite d'affichage est définie à 200 pour des raisons de performance (il y a <a
         href="https://bnetcmsus-a.akamaihd.net/cms/page_media/20/20E7LR2225OK1685047410111.pdf" target="_blank"
         rel="noreferrer" class="underline">{{
           streamers.length }} personnes</a> dans le programme).</p>
@@ -43,7 +43,7 @@ function handleFilter() {
       placeholder="Chercher un streamer ou une streameuse" v-model="filter" @keyup="handleFilter">
     <div v-if="currentStreamers.length === 0" class="text-lg">Aucune streameuse ou streamer trouvé...</div>
     <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-      <li v-for="streamer in currentStreamers.slice(0, 100)">
+      <li v-for="streamer in currentStreamers.slice(0, 200)">
         <a :href="streamer.url" target="_blank" rel="noreferrer"
           class="btn btn-primary btn-lg btn-block font-semibold flex-nowrap">
           <div class="truncate">{{ streamer.login }}</div>
